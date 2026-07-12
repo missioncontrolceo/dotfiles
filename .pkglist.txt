@@ -39,6 +39,7 @@ cachyos-zsh-config
 cantarell-fonts
 chwd
 claude-desktop
+cowsay
 cpupower
 cryptsetup
 device-mapper
