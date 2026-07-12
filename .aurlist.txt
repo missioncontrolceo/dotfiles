@@ -1,0 +1,10 @@
+google-chrome
+noctalia-greeter
+notion-app-electron
+notion-app-enhanced
+pfetch
+qbz-bin
+slack-desktop
+sublime-text-4
+todoist-appimage
+whatsie
