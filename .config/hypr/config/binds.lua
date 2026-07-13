@@ -137,3 +137,6 @@ hl.monitor({ output = "Unknown-1", disabled = true })
 -- Resize active window with mainMod + arrow keys
 hl.bind(mainMod .. " + right", hl.dsp.window.resize({ x = 50, y = 0, relative = true }),  { repeating = true })
 hl.bind(mainMod .. " + left",  hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
+
+hl.bind(mainMod .. " + down", hl.dsp.window.resize({ x = 0, y = 50, relative = true }),  { repeating = true })
+hl.bind(mainMod .. " + up",   hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
