@@ -114,13 +114,13 @@ hl.bind(mainMod .. " + F2", hl.dsp.focus({ monitor = MONITOR2 }))
 hl.bind(mainMod .. " + F3", hl.dsp.focus({ monitor = MONITOR3 }))
 
 -- Switch to workspace with mainMod + number (per current monitor)
+
 for i = 1, 5 do
-    hl.bind(mainMod .. " + " .. i, hl.dsp.focus({ workspace = "m~" .. i }))
+    hl.bind(mainMod .. " + " .. i, hl.dsp.focus({ workspace = tostring(i) }))
 end
 
--- Move window to workspace with mainMod + SHIFT + number
 for i = 1, 5 do
-    hl.bind(mainMod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = "m~" .. i }))
+    hl.bind(mainMod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = tostring(i) }))
 end
 
 -- Scroll through existing workspaces & monitors
@@ -144,11 +144,11 @@ hl.bind(mainMod .. " + up",   hl.dsp.window.resize({ x = 0, y = -50, relative = 
 
 --More Eddie Monitor Configs--
 
--- Clamshell: kill/restore the internal panel on lid close/open
+-- Clamshell: kill/restore internal panel on lid close/open
 hl.bind("switch:on:Lid Switch", function()
-    hl.monitor({ output = "eDP-1", disabled = true })
+    hl.monitor({ output = MONITOR1, disabled = true })
 end, { locked = true })
 
 hl.bind("switch:off:Lid Switch", function()
-    hl.monitor({ output = "eDP-1", disabled = false, mode = "2880x1800@120", scale = 1.5 })
+    hl.monitor({ output = MONITOR1, mode = "2560x1600@90", position = "auto-right", scale = 1.33 })
 end, { locked = true })
