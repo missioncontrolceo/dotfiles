@@ -140,3 +140,15 @@ hl.bind(mainMod .. " + left",  hl.dsp.window.resize({ x = -50, y = 0, relative =
 
 hl.bind(mainMod .. " + down", hl.dsp.window.resize({ x = 0, y = 50, relative = true }),  { repeating = true })
 hl.bind(mainMod .. " + up",   hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
+
+
+--More Eddie Monitor Configs--
+
+-- Clamshell: kill/restore the internal panel on lid close/open
+hl.bind("switch:on:Lid Switch", function()
+    hl.monitor({ output = "eDP-1", disabled = true })
+end, { locked = true })
+
+hl.bind("switch:off:Lid Switch", function()
+    hl.monitor({ output = "eDP-1", disabled = false, mode = "2880x1800@120", scale = 1.5 })
+end, { locked = true })
