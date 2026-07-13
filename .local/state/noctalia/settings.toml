@@ -25,7 +25,8 @@ pinned = [
     "google-chrome",
     "org.telegram.desktop",
     "com.ktechpit.whatsie",
-    "qbz"
+    "qbz",
+    "chrome-kadndpdhfiaigidpmcgmgabmbcjnjbgn-Default"
 ]
 
 [idle]

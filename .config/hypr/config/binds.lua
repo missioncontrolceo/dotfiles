@@ -142,7 +142,9 @@ hl.bind(mainMod .. " + down", hl.dsp.window.resize({ x = 0, y = 50, relative = t
 hl.bind(mainMod .. " + up",   hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
 
 
---More Eddie Monitor Configs--
+--More Eddie Configs--
+
+hl.bind("CONTROL + SHIFT + 1", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
 
 -- Clamshell: kill/restore internal panel on lid close/open
 hl.bind("switch:on:Lid Switch", function()
@@ -152,3 +154,5 @@ end, { locked = true })
 hl.bind("switch:off:Lid Switch", function()
     hl.monitor({ output = MONITOR1, mode = "2560x1600@90", position = "auto-right", scale = 1.33 })
 end, { locked = true })
+
+
