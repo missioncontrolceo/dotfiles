@@ -1,5 +1,12 @@
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 
+hl.config({
+    animations = {
+        enabled = true,
+        workspace_wraparound = true,
+    },
+})
+
 -- Default beziers
 hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })
 hl.curve("easeInOutCubic", { type = "bezier", points = { {0.65, 0.05}, {0.36, 1}    } })
@@ -15,6 +22,6 @@ hl.curve("rubber",         { type = "spring", mass = 1, stiffness = 70,      dam
 -- Animations
 hl.animation({ leaf = "global",              enabled = true, speed = 3, bezier = "quick"                 })
 hl.animation({ leaf = "windows",             enabled = true, speed = 3, spring = "easy",  style = "slide" })
-hl.animation({ leaf = "workspaces",          enabled = true, speed = 5, bezier = "quick", style = "slide" })
-hl.animation({ leaf = "specialWorkspaceIn",  enabled = true, speed = 2, bezier = "quick", style = "slide top"})
-hl.animation({ leaf = "specialWorkspaceOut", enabled = true, speed = 2, bezier = "quick", style = "slide bottom"})
+hl.animation({ leaf = "workspaces",    enabled = true, speed = 1.94, bezier = "almostLinear", style = "slidefade" })
+hl.animation({ leaf = "workspacesIn",  enabled = true, speed = 1.94, bezier = "almostLinear", style = "slidefade" })
+hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "slidefade" })

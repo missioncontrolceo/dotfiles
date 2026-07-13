@@ -3,6 +3,7 @@ background_opacity = 0.60999998636543751
 capsule = true
 capsule_opacity = 0.69999998435378075
 capsule_thickness = 0.5599999912083149
+center = [ "workspaces", "spacer_1", "clock", "spacer_1", "weather" ]
 end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "battery", "session" ]
 margin_edge = 8
 margin_ends = 24
@@ -11,6 +12,7 @@ radius_bottom_left = 10
 radius_bottom_right = 10
 radius_top_left = 10
 radius_top_right = 10
+start = [ "launcher", "spacer_1", "group:g1", "active_window" ]
 
 [dock]
 active_monitor_only = true
@@ -46,6 +48,9 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     action = "screen_off"
     enabled = true
     timeout = 660.0
+
+[location]
+auto_locate = true
 
 [lockscreen_widgets]
 enabled = false
@@ -111,6 +116,8 @@ path = "/home/eddie/Pictures/Wallpapers/Crater.png"
 path = "/home/eddie/Pictures/Wallpapers/Crater.png"
 
 [widget.clock]
+anchor = true
+font_weight = 700
 format = "{:%H:%M %A %d/%m/%y}"
 
 [widget.launcher]
