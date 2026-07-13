@@ -5,6 +5,7 @@ hl.config({
 kb_layout = "gb",
         sensitivity = 1,
         accel_profile = "flat",
+        natural_scroll = true,      -- mice
 
         touchpad = {
             natural_scroll = true,
