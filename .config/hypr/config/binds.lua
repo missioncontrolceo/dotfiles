@@ -147,12 +147,7 @@ hl.bind(mainMod .. " + up",   hl.dsp.window.resize({ x = 0, y = -50, relative = 
 hl.bind("CONTROL + SHIFT + 1", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
 
 -- Clamshell: kill/restore internal panel on lid close/open
-hl.bind("switch:on:Lid Switch", function()
-    hl.monitor({ output = MONITOR1, disabled = true })
-end, { locked = true })
-
-hl.bind("switch:off:Lid Switch", function()
-    hl.monitor({ output = MONITOR1, mode = "2560x1600@90", position = "auto-right", scale = 1.33 })
-end, { locked = true })
+hl.bind("switch:on:Lid Switch",  hl.dsp.exec_cmd("~/.local/bin/lid-close"), { locked = true })
+hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("~/.local/bin/lid-open"),  { locked = true })
 
 
