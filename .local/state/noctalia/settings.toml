@@ -3,7 +3,7 @@ background_opacity = 0.60999998636543751
 capsule = true
 capsule_opacity = 0.69999998435378075
 capsule_thickness = 0.5599999912083149
-center = [ "workspaces", "spacer_1", "clock", "spacer_1", "weather" ]
+center = [ "workspaces", "spacer_1", "clock", "spacer_1" ]
 end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "bluetooth", "battery", "session" ]
 margin_edge = 8
 margin_ends = 24
@@ -122,3 +122,6 @@ format = "{:%H:%M %A}"
 
 [widget.launcher]
 glyph = "rocket"
+
+[widget.tray]
+hidden = [ "whatsie", "todoist", "telegram-desktop" ]

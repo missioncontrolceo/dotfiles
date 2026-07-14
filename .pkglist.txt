@@ -60,6 +60,7 @@ fastfetch
 ffmpegthumbnailer
 firefox
 flatpak
+fprintd
 freetube
 fsarchiver
 git
@@ -175,6 +176,7 @@ ufw
 ufw-extras
 unrar
 unzip
+upower
 usb_modeswitch
 usbutils
 vim
