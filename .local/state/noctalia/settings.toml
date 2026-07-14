@@ -16,6 +16,8 @@ start = [ "launcher", "spacer_1", "group:g1", "active_window" ]
 
 [dock]
 active_monitor_only = true
+auto_hide = true
+background_opacity = 0.63999998569488525
 enabled = true
 icon_size = 38
 pinned = [
@@ -30,6 +32,7 @@ pinned = [
     "qbz",
     "chrome-kadndpdhfiaigidpmcgmgabmbcjnjbgn-Default"
 ]
+reserve_space = false
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]

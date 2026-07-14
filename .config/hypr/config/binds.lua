@@ -10,7 +10,7 @@ local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empt
 hl.bind(mainMod .. " + Escape",      hl.dsp.exec_cmd("hyprctl kill"))
 hl.bind(mainMod .. " + Q",           hl.dsp.window.close())
 hl.bind(mainMod .. " + ALT + Space", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + D",           hl.dsp.window.fullscreen({ mode = 1 }))
+-- hl.bind(mainMod .. " + D",           hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + J",           hl.dsp.layout("togglesplit"))
 
 -- Change focus
@@ -146,8 +146,23 @@ hl.bind(mainMod .. " + up",   hl.dsp.window.resize({ x = 0, y = -50, relative = 
 
 hl.bind("CONTROL + SHIFT + 1", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
 
+
+
 -- Clamshell: kill/restore internal panel on lid close/open
 hl.bind("switch:on:Lid Switch",  hl.dsp.exec_cmd("~/.local/bin/lid-close"), { locked = true })
 hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("~/.local/bin/lid-open"),  { locked = true })
+
+
+-------------------------------
+---- OPENWHISPR DICTATION -----
+-------------------------------
+local ow = "busctl --user call com.openwhispr.App /com/openwhispr/App com.openwhispr.App Toggle"
+
+-- Start/stop dictation (press, speak, press again)
+hl.bind(mainMod .. " + D",         hl.dsp.exec_cmd(ow))
+
+-- Bring up the OpenWhispr window (control panel, history, settings)
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("openwhispr"))
+
 
 
