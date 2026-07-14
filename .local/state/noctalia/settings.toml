@@ -109,14 +109,17 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@eDP-1" ]
 enabled = true
 size = 34
 
+[theme]
+wallpaper_scheme = "m3-fruit-salad"
+
 [wallpaper.default]
-path = "/home/eddie/Pictures/Wallpapers/Buildings.png"
+path = "/home/eddie/Pictures/Wallpapers/Sun-Setting-Horizon.png"
 
 [wallpaper.last]
-path = "/home/eddie/Pictures/Wallpapers/Buildings.png"
+path = "/home/eddie/Pictures/Wallpapers/Sun-Setting-Horizon.png"
 
 [wallpaper.monitors.eDP-1]
-path = "/home/eddie/Pictures/Wallpapers/Buildings.png"
+path = "/home/eddie/Pictures/Wallpapers/Sun-Setting-Horizon.png"
 
 [widget.clock]
 anchor = true
@@ -128,3 +131,7 @@ glyph = "rocket"
 
 [widget.tray]
 hidden = [ "whatsie", "todoist", "telegram-desktop" ]
+
+[widget.workspaces]
+display = "id"
+hide_when_empty = true
