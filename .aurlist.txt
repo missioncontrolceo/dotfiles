@@ -1,3 +1,4 @@
+chatgpt-desktop-bin
 google-chrome
 noctalia-greeter
 notion-app-electron
