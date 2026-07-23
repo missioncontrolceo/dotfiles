@@ -166,3 +166,6 @@ hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("openwhispr"))
 
 
 
+-- Logitech thumb wheel → volume
+hl.bind("mouse_left",  hl.dsp.exec_cmd("wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 10%+"), { locked = true })
+hl.bind("mouse_right", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-"),        { locked = true })
